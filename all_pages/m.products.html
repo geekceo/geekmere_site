@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3"/>
+    <link rel="shortcut icon" href="../img/gm.jpg" type="image/x-icon">
+	<title>Geek Mere Продукты</title>
+
+</head>
+
+<style>
+  #logo { position: relative; right: 5%; bottom: 2%; height:10%; width: 11%; border: 2% solid #000000; border-radius: 16%;}
+  #burger {position: relative; right: 38%; top: 1.5pt; height:5%; width: 8%;}
+  #prod_im { border: 1.5pt solid #000000; border-radius: 8pt;}
+  li { position: relative; bottom: 3.5pt;}
+  body { background: #E4E7E4; background-attachment: fixed;}
+  #pres { /*border: 1pt; solid black; border-radius: 7pt; background: green; padding: 2pt;*/ text-decoration: none; color: #2D899F; position: relative; left: 800pt;}
+  #continue { border: 1pt; solid black; border-radius: 7pt; background: #0b6804; padding: 2pt; text-decoration: none; color: black; position: relative; left: 200pt; bottom: 60pt;}
+  	p{
+  font-size: 100%;
+  margin: 1% ;
+  border: 10% solid white;
+  padding: 2%;
+  border-radius: 2px 2px;
+  background-color: white;
+  color: black;
+    }
+  	
+  	*{
+  font-family: sans-serif;
+}
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar li { display: inline; }
+#navbar {
+  margin: 0;
+  padding: 0%;
+  list-style-type: none;
+  border: 2px solid #121821;
+  border-radius: 2px 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #303030;
+}
+#navbar a {
+  color: #fff;
+  margin: 5px 60px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 40%;
+}
+#navbar a:hover {
+  border-radius: 1px 1px;
+  background-color: #121821;
+}
+
+#menu_burger a {
+  color: #fff;
+  margin: 1% 1%;
+  padding: 5% 3%;
+  text-decoration: none;
+  font-size: 250%;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  border-radius: 1px 1px;
+  border-color: black;
+  background-color: #303030;
+}
+/*ul .li-img:before {
+  position: fixed;
+  content: '';
+  top: 2.25%;
+  width: 40px;
+  height: 40px;
+}*/
+</style>
+<body>
+	<ul id="navbar">
+	<img id="burger" src="/img/menu_burger.png" onclick="showFun()">
+	
+	<img id="logo" src="/img/gm.jpg"></img>
+  		
+	</ul>
+	<menu id="menu_burger" style="display: none; background-attachment: fixed;">
+	    <ul>
+	        <li><a href="../index.html">Главная</a></li>
+	        <li><a href="/all_pages/products.html">Продукты</a></li>
+	        <li><a href="/all_pages/about_us.html">О нас</a></li>
+	        <li><a href="/all_pages/beta.html">Beta-тесты</a></li>
+	    </ul>
+	</menu>
+	<script>
+	var visible = false;
+    function showFun() {
+    if(visible) {
+        document.getElementById('menu_burger').style.display = 'none';
+
+        visible = false;
+
+    } else {
+        document.getElementById('menu_burger').style.display = 'block';
+
+        visible = true;
+
+    }
+
+}
+
+</script>
+  <p style="font-size: 250%;"><b>Здесь вы можете увидеть список всех наших продуктов</b></p>
+  <p><img id="prod_im" src="/img/eva_ico.png" width="15%" height="20%" alt="eva_8_ico" align="top">
+      <text style="font-size: 230%;"><b>EVA-8-ENCODE</b> программа для шифрованной передачи файлов...</text>
+      <br></br>
+      <a id="pres" href="/all_pages/eva-8.html" style="font-size: 60pt;">Далее...></a></p>
+  <p><img id="prod_im" src="/img/EV@.png" width="15%" height="20%" alt="eva_8_ico" align="top">
+      <text style="font-size: 230%;"><b>EVA-8-DELUXE</b> безопасный обмен файлами при помощи шифра.</text>
+      <br></br>
+      <a id="pres" href="/all_pages/m.eva-deluxe.html" style="font-size: 60pt;">Далее...></a></p>
+</body>
+</html>

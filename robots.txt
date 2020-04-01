@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /js/
+Disallow: /img/
+
+Sitemap: http://geekmere.ru/sitemap.xml

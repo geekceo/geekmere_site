@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GMStudio Bots</title>
+	<link rel="stylesheet" href="/home/claus/Desktop/bot_site/css/menu.css">
+	<link rel="stylesheet" href="/home/claus/Desktop/bot_site/css/lineXline.css">
+  <link rel="stylesheet" href="/home/claus/Desktop/bot_site/css/si.css">
+  <script src = "/home/claus/Desktop/bot_site/js/checkPasswordMatch.js"></script>
+</head>
+<meta charset="utf-8">
+<style>
+  html {overflow: hidden;}
+  body { background: url(/home/claus/Desktop/bot_site/img/background.gif); background-attachment: fixed;}
+</style>
+<body>
+	<ul id="navbar">
+		<li class="li-img">gm</li>
+  		<li><a href="/home/claus/Desktop/bot_site/index.html">Главная</a></li>
+  		<li><a href="/home/claus/Desktop/bot_site/all_pages/products.html">Продукты</a></li>
+  		<li><a href="#">О нас</a></li>
+  		<li><a href="/home/claus/Desktop/bot_site/all_pages/si.html">Вход</a></li>
+	</ul>
+    	<div id="login-form">
+      	<h1>РЕГИСТРАЦИЯ</h1>
+        <fieldset>
+            <form action="javascript:void(0);" method="post" onsubmit="return checkPass()"> 
+                <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' "> 
+                <input type="password" id = "newPassword" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' "> 
+                <input type="password" id = "ConfirmPassword" required value="Пароль" onBlur="if(this.value=='')this.value='Пароль'" onFocus="if(this.value=='Пароль')this.value='' "> 
+                <b id="error"></b>
+                <input type="submit" value="Завершить регистрацию">
+            </form>
+        </fieldset>
+    	</div> 
+</body>
+</html>

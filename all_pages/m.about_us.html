@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta id="vp" name="viewport" content="width=device-width, height=device-height, initial-scale=0.1"/>
+	<title>Geek Mere Inc.</title>
+	<link rel="shortcut icon" href="../img/gm.jpg" type="image/x-icon">
+
+</head>
+<meta charset="utf-8">
+<style>
+    gg {position: relative; left: 30pt; bottom: 70pt;}
+    #logo { position: relative; right: 5%; top: 1%; height:10%; width: 11%; border: 2px solid #000000; border-radius: 8px;}
+    #burger {position: relative; right: 38%; top: 1.5pt; height:5%; width: 8%;}
+    li { position: relative; bottom: 3.5pt;}
+  	#uch { border: 2px solid #556B2F; border-radius: 8px; height: 30%; width: 30%pt;}
+  	body { background: #E4E7E4; background-attachment: fixed;}
+  	os { position: relative; bottom: 780pt; left: 7pt; font-size: 10.5pt;}
+  	os1 { position: relative; bottom: 760pt; left: 575pt; font-size: 11pt;}
+  	
+  p{
+  margin: 1% ;
+  border: 10% solid white;
+  padding: 2%;
+  border-radius: 2px 2px;
+  background-color: white;
+  color: black;
+    }
+	*{
+  font-family: sans-serif;
+}
+#navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar li { display: inline; }
+#navbar {
+  margin: 0;
+  padding: 0%;
+  list-style-type: none;
+  border: 2px solid #121821;
+  border-radius: 2px 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #303030;
+}
+#navbar a {
+  color: #fff;
+  margin: 5px 60px;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 40%;
+}
+#navbar a:hover {
+  border-radius: 1px 1px;
+  background-color: #121821;
+}
+
+#menu_burger a {
+  color: #fff;
+  margin: 1% 1%;
+  padding: 5% 3%;
+  text-decoration: none;
+  font-size: 250%;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+
+li {
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+  border-radius: 1px 1px;
+  border-color: black;
+  background-color: #303030;
+}
+</style>
+<body>
+	<ul id="navbar">
+	    <img id="burger" src="/img/menu_burger.png" onclick="showFun()">
+		<img id="logo" src="/img/gm.jpg"></img>
+  		
+	</ul>
+	
+	<menu id="menu_burger" style="display: none; background-attachment: fixed;">
+	    <ul>
+	        <li><a href="../index.html">Главная</a></li>
+	        <li><a href="/all_pages/products.html">Продукты</a></li>
+	        <li><a href="/all_pages/about_us.html">О нас</a></li>
+	        <li><a href="/all_pages/beta.html">Beta-тесты</a></li>
+	    </ul>
+	</menu>
+	<script>
+	var visible = false;
+    function showFun() {
+    if(visible) {
+        document.getElementById('menu_burger').style.display = 'none';
+
+        visible = false;
+
+    } else {
+        document.getElementById('menu_burger').style.display = 'block';
+
+        visible = true;
+
+    }
+
+}
+
+</script>
+	
+	<p>
+		<b>Geek Mere Inc.</b> является молодой IT-компанией по разработке программного обеспечения для персональных компьютеров.
+		<br>Команда сформировалась после победы на хакатоне в 2016 году.</br>
+		    <br>  </br>
+		    <br>  </br>
+		    <br><b>Состав команды:</b></br>
+		    <br>  </br>
+		    <br><b>Насрулаев Руслан</b></br>
+		    <br><img id="uch" src="../img/rusik.jpg">
+		    <os id="gg">Python-программист, специалист </os><br />
+		    <os_p style="position: relative; left: 575pt; bottom: 770pt; font-size: 10.5pt;">по информационной безопасности.</os_p>
+		    <br></br>
+		    <os1><b>Email: Nasrulaev_rd@mail.ru</b></os1>
+		    <br></br>
+		    <br><b>Магомедов Саид</b></br>
+		    <br><img id="uch" src="../img/soed.jpg">
+		    <os>Программист, специалист по </os><br />
+		    <os_p style="position: relative; left: 540pt; bottom: 770pt; font-size: 10.5pt;">работе с персоналом.</os_p>
+		    <br></br>
+		    <os1 style="left: 540pt;"><b>Email: markspektorian@gmail.com</b></os1>
+		    <br></br>
+		    <br><b>Ахмедов Исак</b></br>
+		    <br><img id="uch" src="../img/isak.jpg">
+		    <os>Веб-разработчик, специалист по </os>
+		    <os_p style="position: relative; left: 600pt; bottom: 770pt; font-size: 10.5pt;">работе с клиентами</os_p>
+		    </br></br>
+		    <os1 style="left: 600pt;"><b>Email: ahmedovisak@gmail.com</b></os1>
+		    <br><b>Халилов Тагир</b></br>
+		    <br><img id="uch" src="../img/tager_dzhan.jpg">
+		    <os style="bottom: 690pt;">Ведущий программист, системный </os>
+		    <os_p style="position: relative; left: 565pt; bottom: 690pt; font-size: 10.5pt;">администратор.</os_p>
+		    <br></br>
+		    <os1 style="left: 565pt; bottom: 710pt;"><b>Email: khalilov.tg@gmail.com</b></os1>
+		    </br></br>
+		    <!--<br><b>Степанянц Баграт</b></br>
+		    <br><img id="uch" src="../img/bagrat.jpg">
+		    <os>Дизайнер команды</os>
+		    <br></br>
+		    <os1><b>Email: Stepanyants.14b@gmail.com</b></os1>
+		    <br></br>
+		    <os1></os1>-->
+		    
+		    <br /> <br /> <br />
+		    <b>Мы в соц. сетях:</b>
+		    <br /> <br />
+		    <a href="https://www.instagram.com/geekmere.inc/" target="_blank"><img src="/img/insta.jpg" width="220pt" height="170pt"></a>
+		    <a href="https://vk.com/geekmereinc" target="_blank"><img src="/img/vk.jpg" width="190pt" height="170pt"></a>
+		    </p>
+		    
+</body>
+</html>
