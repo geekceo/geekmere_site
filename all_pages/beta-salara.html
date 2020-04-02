@@ -88,7 +88,8 @@ form{
 #application {
     position: absolute;
     left: 0.6%;
-    width: 40%;
+    width: 94.4%;
+    height: 210pt;
     margin: 0 auto;
 }
  
@@ -163,46 +164,27 @@ form{
   		<li><a href="../index.html">Главная</a></li>
   		<li><a href="/all_pages/products.html">Продукты</a></li>
   		<li><a href="/all_pages/about_us.html">О нас</a></li>
-  		<li><a href="/all_pages/beta.html">Beta-тесты</a></li>
+  		<li><a href="/all_pages/beta-salara.html">Beta-тесты</a></li>
 	</ul>
 	<p><b>Бета-тест</b> предназначен для выявления багов и недоработок в промежуточной версии, когда <b>Вы</b> - пользователи
   - можете помочь разработчикам в производстве конечного продукта. Тем, кто помог в вычислении недработок
    мы вышлем индивидуальные копии продукта до основого релиза.</p>
   <p><b>Список продуктов для которых открыт бета-тест</b></p>
-  <p><b>EVA-8 Console</b>
+  <p><b>SalaraCloud</b>
   <br></br>
-  <img id="prod_im" src="../img/ConsIcon.png" width="120dp" height="120dp" alt="eva_8_ico" align="top">
-  EVA-8 Console предназначена для гиков и любителей терминалов Linux и Windows.
-  <br></br>
-  <iframe src="https://vk.com/video215102097_456239554" width="640pt" height="360pt" frameborder="0" allowfullscreen></iframe>
+  <img id="prod_im" src="../img/SalaraLogo.png" width="120dp" height="120dp" alt="eva_8_ico" align="top">
+  <b>Cовершенно новый опыт использования облачных технологий хранения и обработки информации.</b>
   <br></br>
   <b>Правила теста:</b>
   <br></br>
-  • Не давать на вход пути с пробелами в названии директорий и файлов <br /> <br />
-  • Работает пока только с изображениями <br /> <br />
-  • Не совместим с шифром прошлых версий, поэтому старый код не воспримет <br /> <br />
-  • После запуска написать в строке ввода команд команду "help" для получения списка команд<br /> <br />
-  • <b>НЕ</b> удалять бинарные файлы ни из одной папки<br /> <br />
-  • При нахождении бага, сообщить о нем при помощи формы внизу страницы<br /> <br />
-  <b>Размер: 158 мб</b>
-  <br></br>
-  <a id="download" href="../products/EVA/EvaConsoleSetupBeta.zip" onclick="location.href='click.php?from='+location.href" download>Скачать</a>
-  </p>
-  <form id="application" action=" application.php" method="POST" name=" application ">
-   <input name="name" id="applicationName" maxlength="20" placeholder="Введите ваше имя" required />
-   <input name="email" type="mail" id="applicationName" maxlength="80" placeholder="Введите ваш Email" required />
-   <input name="bug" id="applicationEmail" maxlength="1024" placeholder="Введите найденную ошибку" required />
+  • Пройти регистрацию в форме снизу <br /> <br />
+  • После объявления о бета-тесте(примерно в начале мая) каждый из участников получит инвидуальную копию продукта <br /> <br />
+  • Проходя регистрацию, Вы соглашаетесь с условиями <a style="text-decoration: none; color: #2D899F;" href="../docs/licenzionnoe_soglashenie.doc">лицензионного соглашения</a> <br /> <br />
+  <form id="application" action="application.php" method="POST" name="application">
+   <input name="mail" type="mail" id="applicationName" maxlength="50" placeholder="Ваша почта" required />
+   <input name="pass" type="password" id="applicationName" maxlength="80" placeholder="Ваш пароль" required />
    <button class="applicationButton" type="submit" form="application">Отправить </button>
    
   
 </body>
-<footer>    
-        <br />
-        <b style="position: relative; left: 10pt">© Geek Mere Inc. (GMI), Все права защищены.</b>       
-        <br /><b style="position: relative; left: 10pt">2016-2020</b>
-        <a style="position: relative; left: 600pt;" href="https://webmaster.yandex.ru/sqi?host=geekmere.ru"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?geekmere.ru&theme=dark&lang=ru"/></a>
-        <br />
-        <br />
-    
-</footer>
 </html>
